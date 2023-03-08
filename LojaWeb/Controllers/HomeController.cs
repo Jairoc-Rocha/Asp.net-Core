@@ -18,6 +18,8 @@ namespace LojaWeb.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["Title"] = "Políticas de Privacidade";
+            ViewBag.Nome = "Carlos";
             return View();
         }
         
