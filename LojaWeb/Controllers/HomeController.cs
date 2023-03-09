@@ -22,6 +22,24 @@ namespace LojaWeb.Controllers
             ViewBag.Nome = "Carlos";
             return View();
         }
-        
+
+        [HttpPost]
+        public IActionResult Privacy(string Id, string Nome)
+        {
+            return View();
+        }
+
+        [Route("/Mensagem/Saudacao/")]
+        public IActionResult Saudacao()
+        {
+            return Content($"Olá usuário");
+        }
+
+        //[Route("/Mensagem/Saudacao/")]
+        public IActionResult Saudacao(int id)
+        {
+            return Content($"Olá usuário {id}");
+        }
+
     }
 }
